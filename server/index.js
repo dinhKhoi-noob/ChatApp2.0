@@ -44,7 +44,7 @@ app.get('/',(req,res)=>{
 const server = app.listen(PORT,()=>console.log(`Hello from port ${PORT}`));
 const io = require('socket.io')(server,{
     cors:{
-        origin:"https://60af990adad9ce10a05421b8--stoic-northcutt-1a880f.netlify.app",
+        origin:"https://60af9b7dc88b7e0c6fd891f2--stoic-northcutt-1a880f.netlify.app",
         method:["GET","POST","PUT","DELETE"]
     }
 });
