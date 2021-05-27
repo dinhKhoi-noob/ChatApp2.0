@@ -90,6 +90,7 @@ const AuthContextProvider = ({children}) => {
     const editProfile = async profile => {
         try 
         {
+            console.log(profile);
             const response = await axios.put(`${url.apiUrl}/auth/${authState.user._id}`,profile);
             if(response.data.success){
                 console.log(response.data.newProfile);

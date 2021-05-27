@@ -42,13 +42,14 @@ const Information = () => {
                 chatname,
                 avatar : response?endPoint+'/'+response.file.filePath:`${endPoint}/uploads/2021-05-16T02-11-02.795Z-1024px-User-avatar.svg.png`
             }
+            console.log(data,response);
             editProfile(data);
             setEditing(!editing);    
         } 
         catch (error) 
         {
             alert("error");
-            console.log(error);
+            console.error(error);
         }
     }
     return (

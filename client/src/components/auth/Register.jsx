@@ -4,7 +4,7 @@ import AlertMessage from '../layouts/AlertMessage'
 import {AuthContext} from '../../contexts/AuthContext'
 
 const Register = ({setupSocket}) => {
-    const {registerUser,alert,setAlert} = useContext(AuthContext);
+    const {registerUser,alert,setAlert,setReloading} = useContext(AuthContext);
     const [registerState,setRegisterState] = useState({
         username:'',
         password:"",
@@ -37,7 +37,7 @@ const Register = ({setupSocket}) => {
                 setTimeout(()=>setAlert({type:"",message:""}),5000);
             }
             else
-                setupSocket();
+                setReloading(true);
         } 
         catch (error) 
         {

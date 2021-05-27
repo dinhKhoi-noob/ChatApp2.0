@@ -21,7 +21,7 @@ const UserSchema = new Schema({
     },
     avatar:{
         type:String,
-        default:"http://localhost:5000/uploads/2021-05-16T02-11-02.795Z-1024px-User-avatar.svg.png"
+        default:"https://chat-app-server-demo.herokuapp.com//uploads/2021-05-16T02-11-02.795Z-1024px-User-avatar.svg.png"
     }
 })
 

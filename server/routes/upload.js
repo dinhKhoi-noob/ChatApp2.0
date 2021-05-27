@@ -23,6 +23,17 @@ router.post('/singleFile',uploadMiddleware.single('file'),async(req,res,next)=>{
     }
 });
 
+router.get('/',async(req,res)=>{
+    try{
+        response = await SingleFile.find();
+        res.json({message:"Success",success:true,data:response});
+    }
+    catch(err)
+    {
+        res.status(500).json({success:false,message:"Internal server failed"});
+    }
+})
+
 router.post('/multipleFile',uploadMiddleware.array('files'),async(req,res,next)=>{
     try {
         const data = [];
