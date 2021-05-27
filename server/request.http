@@ -1,0 +1,75 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"DinhKhoi233",
+    "password":"123324",
+    "chatName":"DinhKhoi2112"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"DinhKhoi",
+    "password":"123324"
+}
+
+###
+
+POST http://localhost:5000/api/room/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDkzNWJkYmM4ZWEwOTI1NmRkNzY1ODYiLCJpYXQiOjE2MjAyNzAwNDN9.L8DZUZrtLNqStHXtIFncLOBXxKKyXbQbkk_E3qMngYI
+
+{
+    "roomName":"Test2312qaw",
+    "password":"123324"
+}
+
+###
+
+GET http://localhost:5000/api/room
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDhlMGE0MzA3MTMxMzFmMzRlN2JmZDgiLCJpYXQiOjE2MjAzNTMyMTR9.P9jcp1v8ZWVxI70dmK5kHsmluNm8FZNNW-KCbsOqUPw
+
+###
+DELETE http://localhost:5000/api/room/6097bd8c0e93962d82e83eab
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDkzNWJkYmM4ZWEwOTI1NmRkNzY1ODYiLCJpYXQiOjE2MjAyNzAwNDN9.L8DZUZrtLNqStHXtIFncLOBXxKKyXbQbkk_E3qMngYI
+
+###
+
+PUT http://localhost:5000/api/room/6091152565d4ab29b3d653c2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDhlMGE0MzA3MTMxMzFmMzRlN2JmZDgiLCJpYXQiOjE2MjAzNTMyMTR9.P9jcp1v8ZWVxI70dmK5kHsmluNm8FZNNW-KCbsOqUPw
+
+{
+    "roomName":"Test23",
+    "password":"1233242"
+}
+
+###
+GET http://localhost:5000/api/auth/608e1075a250542561327da2
+
+###
+
+GET http://localhost:5000/api/room/6091152565d4ab29b3d653c2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDhlMGE0MzA3MTMxMzFmMzRlN2JmZDgiLCJpYXQiOjE2MjAzNTMyMTR9.P9jcp1v8ZWVxI70dmK5kHsmluNm8FZNNW-KCbsOqUPw
+
+###
+
+GET http://localhost:5000/api/room/messages/6097bd8c0e93962d82e83eab
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDhlMGE0MzA3MTMxMzFmMzRlN2JmZDgiLCJpYXQiOjE2MjAzNTMyMTR9.P9jcp1v8ZWVxI70dmK5kHsmluNm8FZNNW-KCbsOqUPw
+
+###
+DELETE http://localhost:5000/api/room/messages/6097bd8c0e93962d82e83eab
+
+###
+
+POST http://localhost:5000/api/room/verify/609a47b51342522bcbeae557
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDhlMGE0MzA3MTMxMzFmMzRlN2JmZDgiLCJpYXQiOjE2MjAzNTMyMTR9.P9jcp1v8ZWVxI70dmK5kHsmluNm8FZNNW-KCbsOqUPw
+
+{
+    "password":"12332"
+}
