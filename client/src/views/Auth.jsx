@@ -23,7 +23,7 @@ const Auth = ({authRoute,setupSocket}) => {
         <div className="landing">
             <div className="dark-overlay">
                 <div className="landing-inner">
-                    <h1>Learn it</h1>
+                    <h1>Chat Application</h1>
                     {body}
                 </div>
             </div>
