@@ -44,7 +44,7 @@ app.get('/',(req,res)=>{
 const server = app.listen(PORT,()=>console.log(`Hello from port ${PORT}`));
 const io = require('socket.io')(server,{
     cors:{
-        origin:"http://localhost:3000",
+        origin:"https://60af990adad9ce10a05421b8--stoic-northcutt-1a880f.netlify.app",
         method:["GET","POST","PUT","DELETE"]
     }
 });
